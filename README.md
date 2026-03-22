@@ -24,7 +24,7 @@ A lightweight Windows utility to toggle the shortcut arrow overlay on desktop ic
 git clone https://github.com/Troyzhenny/Arroff.git
 cd Arroff
 mkdir build && cd build
-cmake ..
+cmake -G "Ninja" ..
 cmake --build . --config Release
 ```
 
