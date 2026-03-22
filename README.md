@@ -1,7 +1,38 @@
 # Arroff short for Arrow Off
-is a tool i made in order to toggle off the shortcut arrows on your windows shortcuts
-for a cleaner look on your desktop.
 
-Arroff is a simple tool with one functionality - to toggle the shortcut arrow on your application shortcuts Off/On.
+A lightweight Windows utility to toggle the shortcut arrow overlay on desktop icons for a cleaner look.
 
-Feel free to use this project as you please, fork, and add other features.
+## Features
+
+- Remove or restore the shortcut arrow on Windows application shortcuts
+- Simple single-screen CLI interface
+- Instant effect via Explorer restart
+
+## Requirements
+
+- Windows 10 or 11
+- Administrator privileges (required to write to the registry)
+
+## Usage
+
+1. Download the latest release
+2. Right-click `arroff.exe` and select **Run as administrator**
+3. Choose to remove or restore the arrow
+
+## Building from Source
+```bash
+git clone https://github.com/Troyzhenny/Arroff.git
+cd Arroff
+mkdir build && cd build
+cmake ..
+cmake --build . --config Release
+```
+
+## How It Works
+
+Arroff writes to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons`
+and restarts Explorer to apply the change.
+
+## License
+
+MIT
