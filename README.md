@@ -10,7 +10,7 @@ A lightweight Windows utility to toggle the shortcut arrow overlay on desktop ic
 
 ## Requirements
 
-- Windows 10 or 11
+- Windows 11 (have not tested on win 10)
 - Administrator privileges (required to write to the registry)
 
 ## Usage
