@@ -1,0 +1,7 @@
+#include <windows.h>
+
+// Icon
+1 ICON "icon.ico"
+
+// Manifest
+1 RT_MANIFEST "arroff.manifest"
