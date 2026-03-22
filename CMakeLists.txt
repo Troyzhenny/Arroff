@@ -1,0 +1,21 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.15)
+
+project(arroff)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+ADD_EXECUTABLE(arroff
+    main.cpp
+    resources.rc
+)
+
+TARGET_INCLUDE_DIRECTORIES(arroff PRIVATE
+    include/
+)
+
+if(MSVC)
+    target_link_options(arroff PRIVATE /MANIFEST:NO)
+endif()

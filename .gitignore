@@ -1,0 +1,14 @@
+# Build
+[Bb]uild/
+[Bb]uild-debug/
+[Bb]uild-release/
+
+# Cmake
+__cmake_systeminformation/
+.cache/
+
+# Clang
+compile_commands.json
+
+# Script
+db.ps1
